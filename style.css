@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  font-size: 3.5rem;
+  color: 222831;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+.notes {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.note-box {
+  width: 250px;
+  height: 250px;
+  background-color: #222831;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px #00adb5;
+}
+
+.note {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #00adb5;
+  text-shadow: 0 0 3px #00adb5;
+}
+
+#get-note {
+  border: none;
+  cursor: pointer;
+  border: 1px solid #222831;
+  color: #222831;
+  padding: 15px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+#get-note:focus {
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+@media screen and (max-width: 700px) {
+  .note-box {
+    width: 120px;
+    height: 120px;
+    justify-content: space-around;
+  }
+
+  .note {
+    font-size: 3rem;
+  }
+}
